@@ -32,7 +32,7 @@ const Socials = ({ isRegisterPage = false }) => {
     <div className="flex sm:space-x-4 sm:flex-row flex-col space-x-0 relative">
      
       <button
-        className="w-full flex items-center justify-center p-2 gap-[5px] sm:gap-[1px] border-[2px] overview-expense-bg rounded-lg mb-[15px] relative"
+        className="w-full flex items-center justify-center p-2 gap-[5px] sm:gap-[1-px] border-[2px] overview-expense-bg rounded-lg mb-[15px] relative"
         onClick={() => oAuthHandler("github")}
         disabled={!!loadingProvider}
       >
@@ -72,7 +72,7 @@ const Socials = ({ isRegisterPage = false }) => {
       </button>
 
       <button
-        className="w-full flex items-center justify-center p-2 gap-[5px] sm:gap-[1px] border-[2px] overview-expense-bg rounded-lg mb-[15px] relative"
+        className="w-full flex items-center justify-center p-2 gap-[5px] sm:gap-[1-px] border-[2px] overview-expense-bg rounded-lg mb-[15px] relative"
         onClick={() => oAuthHandler("google")}
         disabled={!!loadingProvider}
       >
@@ -103,7 +103,7 @@ const Socials = ({ isRegisterPage = false }) => {
           </span>
         ) : (
           <>
-           <img src={googleLogo} alt="google logo" />
+           <img src={googleLogo} alt="google logo" className="w-6 h-6"  />
         <span className="font-medium text-xs sm:text-sm">
           {!isRegisterPage && "Continue with"} Google
         </span>
