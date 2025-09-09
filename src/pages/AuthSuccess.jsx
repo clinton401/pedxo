@@ -23,7 +23,6 @@ const AuthSuccess = () => {
       });
 
       const user = result.data;
-      console.log({user})
             const refreshToken = user?.refreshToken;
 
         if (!user || !refreshToken) {
