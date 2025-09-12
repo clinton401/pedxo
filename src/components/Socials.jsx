@@ -39,6 +39,7 @@ const Socials = ({ isRegisterPage = false }) => {
         
 
         {loadingProvider === "github" ? (
+
          <span>
   <svg
     className="animate-spin h-5 w-5 text-gray-600 [animation-duration:0.5s]"
@@ -61,6 +62,7 @@ const Socials = ({ isRegisterPage = false }) => {
     />
   </svg>
 </span>
+
 
         ): (
           <>
@@ -102,6 +104,7 @@ const Socials = ({ isRegisterPage = false }) => {
     />
   </svg>
 </span>
+
 
         ) : (
           <>
